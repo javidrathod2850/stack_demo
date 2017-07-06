@@ -1,6 +1,71 @@
 <html>
-    <title>Stack Demo</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/qa-styles.css">
-	<link rel="stylesheet" href="css/ubuntu.css">
+    <head>
+        <title>Stack Demo | Office Brain</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/qa-styles.css">
+        <link rel="stylesheet" href="css/theme-style.css">
+        <link rel="stylesheet" href="css/ubuntu.css">
+        <script src="js/ga.js" async="" type="text/javascript"></script>
+        <script src="js/jquery-1.js"></script>
+        <script src="js/qa-page.js"></script>
+        <script src="js/snow-core.js"></script>
+        <script src="js/all.js" async="" id="facebook-jssdk"></script>
+    </head>
     <body>
+        <div id="qam-topbar" class="clearfix">
+			<div class="qam-main-nav-wrapper clearfix">
+				<div class="sb-toggle-left qam-menu-toggle"><i class="icon-th-list"></i></div>
+				<div class="qam-account-items-wrapper">
+					<div id="qam-account-toggle" class="qam-logged-out">
+						<i class="icon-key qam-auth-key"></i>
+						<div class="qam-account-handle">Login</div>
+					</div>
+					<div class="qam-account-items clearfix">
+						<form action="./login?to=activity" method="post">
+							<input name="emailhandle" dir="auto" placeholder="Email or Username" type="text">
+							<input name="password" dir="auto" placeholder="Password" type="password">
+							<div><input name="remember" id="qam-rememberme" value="1" type="checkbox">
+							<label for="qam-rememberme">Remember</label></div>
+							<input name="code" value="0-1498821269-31b78ed2ea4acef76b517bc63243c969b49f9c3c" type="hidden">
+							<input value="Login" class="qa-form-tall-button qa-form-tall-button-login" name="dologin" type="submit">
+						</form>
+						<div class="qa-nav-user">
+							<ul class="qa-nav-user-list">
+								<li class="qa-nav-user-item qa-nav-user-register">
+									<a href="/register" class="qa-nav-user-link">Register</a>
+								</li>
+							</ul>
+							<div class="qa-nav-user-clear"></div>
+						</div>
+					</div> <!-- END qam-account-items -->
+				</div> <!-- END qam-account-items-wrapper -->
+				<div class="qa-logo">
+					<a href="/" class="qa-logo-link" title="Office Beacon"><img src="images/logo.png" alt="Office Beacon" border="0" height="40" width="454"></a>
+				</div>
+				<div class="qa-nav-main">
+					<ul class="qa-nav-main-list">
+						<li class="qa-nav-main-item qa-nav-main-activity">
+							<a href="/activity" class="qa-nav-main-link <% if(route_name === 'activity'){ %> qa-nav-main-selected <% } %>">All Activity</a>
+						</li>
+						<li class="qa-nav-main-item qa-nav-main-questions">
+							<a href="/questions" class="qa-nav-main-link <% if(route_name === 'questions'){ %> qa-nav-main-selected <% } %>">Questions</a>
+						</li>
+						<li class="qa-nav-main-item qa-nav-main-unanswered">
+							<a href="/unanswered" class="qa-nav-main-link <% if(route_name === 'unanswered'){ %> qa-nav-main-selected <% } %>">Unanswered</a>
+						</li>
+						<li class="qa-nav-main-item qa-nav-main-user">
+							<a href="/users" class="qa-nav-main-link <% if(route_name === 'users'){ %> qa-nav-main-selected <% } %>">Users</a>
+						</li>
+						<li class="qa-nav-main-item qa-nav-main-ask">
+							<a href="/ask" class="qa-nav-main-link <% if(route_name === 'ask'){ %> qa-nav-main-selected <% } %>">Ask a Question</a>
+						</li>
+						<li class="qa-nav-main-item-opp qa-nav-main-custom-1">
+							<a href="/about" class="qa-nav-main-link <% if(route_name === 'about'){ %> qa-nav-main-selected <% } %>">About</a>
+						</li>
+					</ul>
+					<div class="qa-nav-main-clear"></div>
+				</div>
+			</div> <!-- END qam-main-nav-wrapper -->
+        </div>
+		<div class="qa-body-wrapper">
+			<div class="qa-main-wrapper">

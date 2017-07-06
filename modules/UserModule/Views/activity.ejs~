@@ -1,0 +1,4 @@
+<% include ../../ThemeModule/Views/elements/header.ejs  %>
+<link rel="stylesheet" href="css/style.css">
+<h1>Activity</h1>
+<% include ../../ThemeModule/Views/elements/footer.ejs  %>

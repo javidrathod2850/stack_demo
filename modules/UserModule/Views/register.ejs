@@ -1,0 +1,49 @@
+<% include ../../ThemeModule/Views/elements/header.ejs  %>
+    <div class="qa-main">
+        <h1><%= title %></h1>
+        <div class="qa-part-form">
+            <form action="/register" method="post">
+                <table class="qa-form-tall-table">
+                    <tbody>
+                        <tr>
+                            <td class="qa-form-tall-label">
+                                Username:
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="qa-form-tall-data">
+                                <input type="text" class="qa-form-tall-text" value="" id="handle" name="handle">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="qa-form-tall-label">
+                                Password:
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="qa-form-tall-data">
+                                <input type="password" class="qa-form-tall-text" value="" id="password" name="password">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="qa-form-tall-label">
+                                Email:
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="qa-form-tall-data">
+                                <input type="text" class="qa-form-tall-text" value="" id="email" name="email">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="qa-form-tall-buttons" colspan="1">
+                                <input type="submit" class="qa-form-tall-button qa-form-tall-button-register" title="" value="Register">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+    </div>
+<% include ../../ThemeModule/Views/elements/sidepanel.ejs  %>    
+<% include ../../ThemeModule/Views/elements/footer.ejs  %>

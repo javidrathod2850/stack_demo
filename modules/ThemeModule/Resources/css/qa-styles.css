@@ -226,6 +226,9 @@ blockquote p {
 	margin-bottom: 5px;
 	background: #bdc3c7;
 }
+.qa-search form{
+	margin-bottom: 0;
+}
 
 .qa-search-field {
 	margin: 0 -40px 0 0;
@@ -246,7 +249,7 @@ blockquote p {
 	height: 36px;
 	margin: 0 !important;
 	text-indent: -9999px;
-	background: #bdc3c7 url('images/search-icon-white.png') center no-repeat;
+	background: #bdc3c7 url('/images/search-icon-white.png') center no-repeat;
 	border: none;
 	outline: none;
 }
@@ -376,7 +379,7 @@ blockquote p {
 	height: 24px;
 	display: block;
 	background-color: transparent;
-	background-image: url('images/icons/close-black.png');
+	background-image: url('/images/icons/close-black.png');
 	background-repeat: no-repeat;
 	background-position: center;
 	text-indent: -9999px;
@@ -387,7 +390,7 @@ blockquote p {
 }
 .qa-notice-close-button:hover, .qa-notice-close-button:focus {
 	background-color: transparent; /* override generic input styles */
-	background-image: url('images/icons/close-red.png');
+	background-image: url('/images/icons/close-red.png');
 	outline: none;
 	border: none;
 }
@@ -948,7 +951,7 @@ blockquote p {
 
 
 .qa-waiting {
-	background: url('images/spinner-icon-14x14.gif?1410117644') no-repeat center;
+	background: url('/images/spinner-icon-14x14.gif?1410117644') no-repeat center;
 	display: inline-block;
 	font-size: 0;
 	height: 14px;
@@ -971,7 +974,7 @@ blockquote p {
 }
 
 .qa-favorite-button, .qa-unfavorite-button {
-	background-image: url('images/star.png');
+	background-image: url('/images/star.png');
 	background-repeat: no-repeat;
 	width: 38px;
 	height: 38px;
@@ -1124,7 +1127,7 @@ blockquote p {
 
 .qa-vote-up-button, .qa-vote-down-button, .qa-voted-up-button, .qa-voted-down-button, .qa-vote-up-disabled, .qa-vote-down-disabled {
 	text-indent: -9999px;
-	background: url('images/vote-buttons.png');
+	background: url('/images/vote-buttons.png');
 	background-repeat: no-repeat;
 	width: 16px;
 	height: 10px;
@@ -1139,7 +1142,7 @@ blockquote p {
 .qa-vote-up-button:hover, .qa-vote-up-button:focus, .qa-vote-up-button:active,.qa-vote-down-button:hover, .qa-vote-down-button:focus, .qa-vote-down-button:active,
 .qa-voted-up-button:hover, .qa-voted-up-button:focus, .qa-voted-up-button:active,.qa-voted-down-button:hover, .qa-voted-down-button:focus, .qa-voted-down-button:active,
 .qa-vote-up-disabled:hover, .qa-vote-up-disabled:focus, .qa-vote-up-disabled:active,.qa-vote-down-disabled:hover, .qa-vote-down-disabled:focus, .qa-vote-down-disabled:active {
-	background: url('images/vote-buttons.png');
+	background: url('/images/vote-buttons.png');
 	border: none;
 	cursor: pointer;
 }
@@ -1317,7 +1320,7 @@ blockquote p {
 	width: 17px;
 	height: 100%;
 	display: block;
-	content: url('images/favorite-light-icon-15x15.png');
+	content: url('/images/favorite-light-icon-15x15.png');
 }
 .qa-q-item-meta .qa-user-link.qa-user-favorited {
 	position: relative;
@@ -1330,7 +1333,7 @@ blockquote p {
 	width: 17px;
 	height: 100%;
 	display: block;
-	content: url('images/favorite-light-icon-15x15.png');
+	content: url('/images/favorite-light-icon-15x15.png');
 }
 
 .qa-q-item-when-data {
@@ -1385,7 +1388,7 @@ blockquote p {
 	width: 17px;
 	height: 100%;
 	display: block;
-	content: url('images/star14.png');
+	content: url('/images/star14.png');
 	background-color: #b94a00;
 }
 
@@ -1569,7 +1572,7 @@ blockquote p {
 	}
 }
 .qa-top-users-label .qa-user-link.qa-user-favorited {
-	background-image: url('images/icons/fev-star.png');
+	background-image: url('/images/icons/fev-star.png');
 	background-repeat: no-repeat;
 	background-position: 2px center;
 	padding-left: 22px;
@@ -2023,7 +2026,7 @@ input[type="submit"], button {
 
 #level .qa-form-wide-static a:first-child {
 	background-color: #27ae60;
-	background-image: url('images/icons/mail-white.png');
+	background-image: url('/images/icons/mail-white.png');
 	background-repeat: no-repeat;
 	background-position: 5px center;
 	padding: 2px 5px 2px 25px;
@@ -2033,7 +2036,7 @@ input[type="submit"], button {
 }
 #level .qa-form-wide-static a:hover:first-child, #level .qa-form-wide-static a:focus:first-child {
 	background-color: #2ecc71;
-	background-image: url('images/icons/mail-white.png');
+	background-image: url('/images/icons/mail-white.png');
 	border: 1px solid #25a25a;
 	color: #fff;
 	text-decoration: none;
@@ -2148,7 +2151,7 @@ input[type="submit"], button {
 	height: 16px;
 	display: inline-block;
 	background-color: #ecf0f1;
-	background-image: url('images/favorite-icon-15x15.png');
+	background-image: url('/images/favorite-icon-15x15.png');
 }
 
 .qa-suggest-next {
@@ -2194,55 +2197,55 @@ input[type="submit"], button {
 }
 
 .qa-form-light-button-edit, .qa-form-light-button-retagcat {
-	background-image: url('images/icons/edit-white.png');
+	background-image: url('/images/icons/edit-white.png');
 }
 .qa-form-light-button-flag {
-	background-image: url('images/icons/flag-white.png');
+	background-image: url('/images/icons/flag-white.png');
 }
 .qa-form-light-button-unflag {
 	background-color: #812b2b;
-	background-image: url('images/icons/flag-white.png');
+	background-image: url('/images/icons/flag-white.png');
 }
 .qa-form-light-button-clearflags {
-	background-image: url('images/icons/un-flag-white.png');
+	background-image: url('/images/icons/un-flag-white.png');
 }
 .qa-form-light-button-hide {
-	background-image: url('images/icons/hide-white.png');
+	background-image: url('/images/icons/hide-white.png');
 }
 .qa-form-light-button-follow {
-	background-image: url('images/icons/link-white.png');
+	background-image: url('/images/icons/link-white.png');
 }
 .qa-form-light-button-reshow {
-	background-image: url('images/icons/show-white.png');
+	background-image: url('/images/icons/show-white.png');
 }
 .qa-form-light-button-claim {
-	background-image: url('images/icons/claim-white.png');
+	background-image: url('/images/icons/claim-white.png');
 }
 .qa-form-light-button-delete {
-	background-image: url('images/icons/delete-white.png');
+	background-image: url('/images/icons/delete-white.png');
 }
 .qa-form-light-button-approve {
-	background-image: url('images/icons/approve-white.png');
+	background-image: url('/images/icons/approve-white.png');
 	padding-left: 18px;
 }
 .qa-form-light-button-reject {
-	background-image: url('images/icons/rejected-white.png');
+	background-image: url('/images/icons/rejected-white.png');
 }
 .qa-form-light-button-close {
-	background-image: url('images/icons/close-white.png');
+	background-image: url('/images/icons/close-white.png');
 }
 .qa-form-light-button-reopen {
-	background-image: url('images/icons/open-white.png');
+	background-image: url('/images/icons/open-white.png');
 }
 .qa-form-light-button-block {
-	background-image: url('images/icons/rejected-white.png');
+	background-image: url('/images/icons/rejected-white.png');
 }
 .qa-form-light-button-reply {
-	background-image: url('images/icons/reply-white.png');
+	background-image: url('/images/icons/reply-white.png');
 }
 
 .qa-form-light-button-answer {
-	background-image: url('images/icons/answer-white.png');
+	background-image: url('/images/icons/answer-white.png');
 	background-color: #27ae60;
 	float: left;
 	margin: 0 5px 0 0;
@@ -2252,7 +2255,7 @@ input[type="submit"], button {
 }
 
 .qa-form-light-button-comment {
-	background-image: url('images/icons/comment-white.png');
+	background-image: url('/images/icons/comment-white.png');
 	float: left;
 	margin: 0;
 }
@@ -2381,7 +2384,7 @@ input[type="submit"], button {
 	width: 44px;
 	text-align: center;
 	display: block;
-	content: url('images/icons/closed-note.png');
+	content: url('/images/icons/closed-note.png');
 }
 .qa-q-view-closed:hover {
 	padding: 10px 10px 10px 54px;
@@ -2400,7 +2403,7 @@ input[type="submit"], button {
 }
 .qa-q-view-closed:hover:before {
 	background-color: #c0392b;
-	content: url('images/icons/closed-note-white.png');
+	content: url('/images/icons/closed-note-white.png');
 }
 
 .qa-q-view-closed-content {
@@ -2558,7 +2561,7 @@ input[type="submit"], button {
 	display: block;
 	margin: 0;
 	position: relative;
-	background-image: url('images/answer-select.png');
+	background-image: url('/images/answer-select.png');
 	background-repeat: no-repeat;
 	background-position: center;
 	-webkit-transition: all 0.5s;
@@ -2637,50 +2640,50 @@ input[type="submit"], button {
 	color: #34495e;
 }
 .qa-c-list-item .qa-form-light-button-comment {
-	background-image: url('images/icons/comment.png');
+	background-image: url('/images/icons/comment.png');
 	float: left;
 	margin: 0;
 }
 .qa-c-list-item .qa-form-light-button-edit, .qa-c-list-item .qa-form-light-button-retagcat {
-	background-image: url('images/icons/edit.png');
+	background-image: url('/images/icons/edit.png');
 }
 .qa-c-list-item .qa-form-light-button-flag {
-	background-image: url('images/icons/flag.png');
+	background-image: url('/images/icons/flag.png');
 }
 .qa-c-list-item .qa-form-light-button-unflag {
 	background-color: #e4afaf;
-	background-image: url('images/icons/flag.png');
+	background-image: url('/images/icons/flag.png');
 }
 .qa-c-list-item .qa-form-light-button-clearflags {
-	background-image: url('images/icons/un-flag.png');
+	background-image: url('/images/icons/un-flag.png');
 }
 .qa-c-list-item .qa-form-light-button-hide {
-	background-image: url('images/icons/hide.png');
+	background-image: url('/images/icons/hide.png');
 }
 .qa-c-list-item .qa-form-light-button-follow {
-	background-image: url('images/icons/link.png');
+	background-image: url('/images/icons/link.png');
 }
 .qa-c-list-item .qa-form-light-button-reshow {
-	background-image: url('images/icons/show.png');
+	background-image: url('/images/icons/show.png');
 }
 .qa-c-list-item .qa-form-light-button-claim {
-	background-image: url('images/icons/claim.png');
+	background-image: url('/images/icons/claim.png');
 }
 .qa-c-list-item .qa-form-light-button-delete {
-	background-image: url('images/icons/delete.png');
+	background-image: url('/images/icons/delete.png');
 }
 .qa-c-list-item .qa-form-light-button-approve {
-	background-image: url('images/icons/approve.png');
+	background-image: url('/images/icons/approve.png');
 	padding-left: 18px;
 }
 .qa-c-list-item .qa-form-light-button-reject {
-	background-image: url('images/icons/rejected.png');
+	background-image: url('/images/icons/rejected.png');
 }
 .qa-c-list-item .qa-form-light-button-close {
-	background-image: url('images/icons/close.png');
+	background-image: url('/images/icons/close.png');
 }
 .qa-c-list-item .qa-form-light-button-reopen {
-	background-image: url('images/icons/open.png');
+	background-image: url('/images/icons/open.png');
 }
 
 .qa-c-item-avatar-meta {
@@ -3001,7 +3004,7 @@ input[type="submit"], button {
 	width: 17px;
 	height: 100%;
 	display: block;
-	content: url('images/favorite-icon-15x15.png');
+	content: url('/images/favorite-icon-15x15.png');
 }
 
 .qa-nav-cat-note {
@@ -3244,7 +3247,7 @@ input[type="submit"], button {
 	}
 
 	.qam-search-mobile {
-		background-image: url('images/icons/search-mobile.png');
+		background-image: url('/images/icons/search-mobile.png');
 		background-repeat: no-repeat;
 		background-position: center;
 		background-color: #1abc9c;
@@ -3310,7 +3313,7 @@ input[type="submit"], button {
 		background-color: #34495e;
 	}
 	.qam-search-mobile.active {
-		background-image: url('images/icons/search-mobile-collaps.png');
+		background-image: url('/images/icons/search-mobile-collaps.png');
 		background-repeat: no-repeat;
 		background-position: center;
 	}

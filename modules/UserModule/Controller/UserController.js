@@ -1,7 +1,11 @@
+var userModel = require('../Model/User');
 module.exports = function(globalVars){
     var app = globalVars.app;
     var path = globalVars.path;
     var express = globalVars.express;
+    var bodyParser = globalVars.bodyparser;
+    var mongoConn = globalVars.mongoconn;
+    
     var appDir = path.dirname(require.main.filename);
     // For Assets
     app.use(express.static(appDir + '/modules/UserModule/Resources'));
@@ -14,6 +18,11 @@ module.exports = function(globalVars){
     app.get('/register',function(req,res){
         init(app);
         res.render('register.ejs', {title: 'Register as a new user', route_name:'register'})
+    });
+    app.post('/register-post',function(req,res){
+        var user=new userModel(mongoConn);
+        var formData = req.body;
+        user.insert(formData,mongoConn);
     });
     app.get('/questions',function(req,res){
         init(app);

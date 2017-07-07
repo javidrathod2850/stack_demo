@@ -1,22 +1,20 @@
-const MongoClient = require('mongoose');
-// console.log(MongoClient);
+var mongoose=require('mongoose');
 class DataBase {
-  constructor(uri,db) {
+  constructor(uri) {
       this.uri = uri;
-      this.db = db;
+      this.db;
       return this;
   }
   mongoConnection () {
-    return new Promise((resolve, reject) => {
-      MongoClient.connect(this.uri, (err, db) => {
-        if (err){
-          reject(err);
-          console.log ('ERROR connecting to: ' + this.uri + '. ' + err);
-        }
-        this.db = db;
-        resolve(this);
-      })
-    })
+    var con;
+    var cb = function(err){
+      if(!err)
+        console.log("Connection Opened");
+      else
+        console.log("Connection Opened Failed");
+    };
+    mongoose.connect(this.uri,cb);
+    con = mongoose.connection;
   }
 }
 module.exports = DataBase;

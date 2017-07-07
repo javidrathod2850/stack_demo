@@ -1,27 +1,29 @@
 "use strict";
-//var hash=require('../pass').hash;
-//var mongoose=require('mongoose');
+
 class User{
 	constructor(MongoCon){
         this.MongoCon = MongoCon;
         this.Schema = MongoCon.Schema;
     }
-	insert(req,MongoCon) {
+	insert(formData,response,MongoCon) {
         var userSchema= new this.Schema({
             userName: {type:String},
             password: {type:String},
             email: {type:String},
         });
-        var userModel = MongoCon.model('tbl_user',userSchema);
-        var alex = new userModel({userName:'Asif',password:"123456",email:"jrathod@officebrain.com"});
-        alex.save(function(err,alex){
-        if(err){
-            console.log(err);
+        if (MongoCon.models && MongoCon.models.tbl_user){
+            var userModel = MongoCon.models.tbl_user
         }else{
-            console.log("Document Save Done");
-        }
+            var userModel = MongoCon.model('tbl_user',userSchema);
+        }        
+        var userData = new userModel({userName:formData.username,password:formData.password,email:formData.email});
+        userData.save(function(err,userData){
+            if(err){
+                console.log(err);
+            }else{
+                response.redirect('/');
+            }
         });
 	}
 }
-
 module.exports = User;

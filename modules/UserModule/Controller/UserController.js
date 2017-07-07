@@ -22,7 +22,7 @@ module.exports = function(globalVars){
     app.post('/register-post',function(req,res){
         var user=new userModel(mongoConn);
         var formData = req.body;
-        user.insert(formData,mongoConn);
+        user.insert(formData,res,mongoConn);
     });
     app.get('/questions',function(req,res){
         init(app);

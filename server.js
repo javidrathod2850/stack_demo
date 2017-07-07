@@ -12,6 +12,6 @@ app.use(bodyParser.urlencoded({ extended: false }));
 var globalVars = {'app':app,'express':express,'path': path,'mongoconn': mongoose,'bodyparser': bodyParser};
 require('./router/main')(globalVars);
 app.use(express.static(__dirname + '/modules/ThemeModule/Resources'));
-var server = app.listen(8000,function(){
+var server = app.listen(8200,function(){
     console.log("We have started our server on port 8000");
 });

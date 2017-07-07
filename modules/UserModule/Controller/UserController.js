@@ -24,6 +24,11 @@ module.exports = function(globalVars){
         var formData = req.body;
         user.insert(formData,res,mongoConn);
     });
+    app.post('/chek-login',function(req,res){ console.log('jj')
+        var user=new userModel(mongoConn);
+        var formData = req.body;
+        user.checklogin(formData,res,mongoConn);
+    });
     app.get('/questions',function(req,res){
         init(app);
         res.render('questions.ejs', {title: 'Questions', route_name:'questions'})

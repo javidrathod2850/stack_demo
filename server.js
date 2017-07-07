@@ -2,7 +2,9 @@ var express = require("express");
 var session = require('express-session');
 var path = require('path');
 var app = express();
-var globalVars = {'app':app,'express':express,'path': path};
+var mongoDbClient = require('./db'); 
+var MongoCon = new mongoDbClient("mongodb://localhost/StackDemoConnection",'StackDemo'); mongoDb.mongoConnection();
+var globalVars = {'app':app,'express':express,'path': path,'mongoconn': MongoCon};
 require('./router/main')(globalVars);
 app.use(express.static(__dirname + '/modules/ThemeModule/Resources'));
 var server = app.listen(8000,function(){

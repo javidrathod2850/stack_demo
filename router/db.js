@@ -12,8 +12,6 @@ class DataBase {
         if (err){
           reject(err);
           console.log ('ERROR connecting to: ' + this.uri + '. ' + err);
-        }else{
-            console.log('Thai gayu');
         }
         this.db = db;
         resolve(this);
